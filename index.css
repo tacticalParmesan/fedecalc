@@ -3,140 +3,116 @@
 :root {
     font-size: 16px;
     font-family: 'Roboto Condensed', monospace;
+    font-weight: bold;
     --velvet-light: #D76C82;
     --velvet-dark: #B03052;
     --smokedcream: #EBE8DB;
 }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-    touch-action: manipulation;
-}
-
-* p, label {
-    text-wrap: wrap;
-}
-
 body {
-    width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    background-color: whitesmoke;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
-    background-color: whitesmoke;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    max-width: 400px;
-    width: 100%;
-}
-
-h1 {
-    text-align: center;
-    font-weight: bold;
-    color: var(--velvet-dark);
-    margin-bottom: 1rem;
-
-    padding: none;
-    color: whitesmoke;
-    background-color: var(--velvet-dark);
-
-    width: 100vw;
-
-    padding: 0.5rem;
-}
-
-section, form {
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     place-content: center;
-    gap: 1rem;
+
 }
 
-label {
+.boxTitolo {
+    width: 100%;
+    background-color: var(--velvet-dark);
+    margin-bottom: 0.5rem;
+}
+
+.titolo {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.areaInput {
     display: flex;
     flex-direction: column;
-    text-wrap: wrap;
-    gap: 0.5rem;
-
-    font-weight: 700;
-}
-
-label input {
-    text-align: right;
-    font-weight: 700;
-    font-size: 2rem;
-    color: whitesmoke;
-
-    border-radius: 8px;
-    border: none;
-    background-color: var(--velvet-light);
-
-    padding: 1rem;
-}
-
-.boxBottoni {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     gap: 1rem;
 }
 
-button {
+.areaInput label {
     font-size: 1.2rem;
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.areaInput input {
+    padding: 1rem;
+    text-align: right;
+    font-weight: inherit;
+    font-size: 1.5rem;
     color: whitesmoke;
+
+    border: none;
+    border-radius: 6px;
     background-color: var(--velvet-light);
-    font-weight: 700;
-    font-size: 2rem;
 }
 
 .areaRisultato {
-    padding: 0;
-    gap: 1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
-section h2, p {
-    text-align: center;
-    font-weight: bold;
+.areaRisultato h2 {
     color: var(--velvet-dark);
 }
 
-section .pRisultatoLordo {
-    background-color: var(--velvet-dark);
-    color: whitesmoke;
-    border-radius: 6px;
-
+.areaRisultato .info {
+    text-align: justify;
+    font-size: 12px;
     padding: 1rem;
 
+    border: none;
+    border-radius: 6px;
+    color: whitesmoke;
+
+    background-color: var(--velvet-light);
 }
 
-section .info {
-    background-color: var(--velvet-light);
-    color: whitesmoke;
+.areaRisultato .pRisultatoLordo {
+    padding: 1rem;
+    border: none;
     border-radius: 6px;
+    color: whitesmoke;
 
-    font-size: 14px;
-    text-wrap: wrap;
+    background-color: var(--velvet-dark);
+}
 
-    max-width: 400px;
-    padding: 0.8rem;
+.boxBottoni {
+    text-align: center;
+}
 
+.boxBottoni button {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 1rem;
+
+    border: none;
+    border-radius: 6px;
+    color: whitesmoke;
+
+    background-color: var(--velvet-light);
 }
 
 footer {
     margin-top: auto;
-    margin-bottom: 0.4rem;
 }
