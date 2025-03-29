@@ -48,6 +48,8 @@ function alClick() {
         e.preventDefault()
         alClick();
     }
+
+    document.ondouble
 })();
 
 
