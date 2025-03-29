@@ -116,3 +116,20 @@ main {
 footer {
     margin-top: auto;
 }
+
+@media only screen and (min-height: 600px) {
+    .titolo {
+        font-size: 24px;
+    }
+    .areaInput label {
+        font-size: 1rem;
+        gap: 2px;
+    }
+    .areaRisultato {
+        gap: 2px;
+    }
+    .areaRisultato h2 {
+        margin-bottom: 0.5rem;
+    }
+
+}
