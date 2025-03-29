@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <h1>Calcolo Cachet</h1>
+        <form class="areaInput">
+            <label for="">Compenso netto:
+                <input type="number" class="inputCompenso">
+            </label>
+            
+            <label for="">Componenti:
+                <input type="number" class="inputComponenti">
+            </label>
+            
+            <label for="">Di cui residenti nel Comune dell'esibizione:
+                <input type="number" class="inputResidenti" value="0">
+            </label>
+            <div class="boxBottoni">
+                <button type="submit" class="bottoneCalcolo">Calcola</button>
+                <button type="reset" class="bottoneReset">Resetta</button>
+            </div>
+        </section>
+        
+        <section class="areaRisultato">
+            <h2>Cachet lordo</h2>
+            <p class="pRisultatoLordo"></p>
+        </section>
+        
+    </main>
+    <script src="fedecalc.js"></script>
+</body>
+</html>
