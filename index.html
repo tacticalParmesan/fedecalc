@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Calcolo cachet</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="boxTitolo">
-        <h1 class="titolo">CALCOLO CACHET</h1>
+      <h1 class="titolo">CALCOLO CACHET</h1>
     </div>
     <main>
-        <form class="areaInput">
-            <label for="">Compenso netto:
-                <input type="number" class="inputCompenso">
-            </label>
-            
-            <label for="">N. musicisti:
-                <input type="number" class="inputComponenti">
-            </label>
-            
-            <label for="">di cui residenti:
-                <input type="number" class="inputResidenti" value="0">
-            </label>
-        </form>
-        
-        
+      <form class="areaInput">
+        <label for=""
+          >Compenso netto:
+          <input type="number" class="inputCompenso" />
+        </label>
+
+        <label for=""
+          >N. musicisti:
+          <input type="number" class="inputComponenti" />
+        </label>
+
+        <label for=""
+          >di cui residenti:
+          <input type="number" class="inputResidenti" value="0" />
+        </label>
+
         <section class="areaRisultato">
-            <h2>LORDO</h2>
-            <p class="info">ⓘ Il risultato lordo è calcolato tenendo conto dell'ENPALS al 27.10%, dell'IRAP al 3.90% e della quota INAIL.</p>
-            <p class="pRisultatoLordo">0€ + IVA</p>
+          <h2>LORDO</h2>
+          <p class="info">
+            ⓘ Il risultato lordo è calcolato tenendo conto dell'ENPALS al
+            27.10%, dell'IRAP al 3.90% e della quota INAIL.
+          </p>
+          <p class="pRisultatoLordo">0€ + IVA</p>
         </section>
-        
+
         <div class="boxBottoni">
-            <button type="submit" class="bottoneCalcolo">Calcola</button>
-            <button type="reset" class="bottoneReset">Resetta</button>
+          <button type="submit" class="bottoneCalcolo">Calcola</button>
+          <button type="reset" class="bottoneReset">Resetta</button>
         </div>
-        
+      </form>
+      
     </main>
-    <footer><a href="https://github.com/tacticalParmesan">@tacticalParmesan</a> (Edoardo Ferreri)</footer>
+    <footer>
+      <a href="https://github.com/tacticalParmesan">@tacticalParmesan</a>
+      (Edoardo Ferreri)
+    </footer>
     <script src="fedecalc.js"></script>
-</body>
+  </body>
 </html>
