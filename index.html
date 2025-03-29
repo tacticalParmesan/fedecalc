@@ -8,32 +8,34 @@
 </head>
 <body>
     <main>
-
-        <h1>Calcolo Cachet</h1>
+        <h1>CALCOLO CACHET</h1>
         <form class="areaInput">
             <label for="">Compenso netto:
                 <input type="number" class="inputCompenso">
             </label>
             
-            <label for="">Componenti:
+            <label for="">N. musicisti:
                 <input type="number" class="inputComponenti">
             </label>
             
             <label for="">Di cui residenti nel Comune dell'esibizione:
                 <input type="number" class="inputResidenti" value="0">
             </label>
-            <div class="boxBottoni">
-                <button type="submit" class="bottoneCalcolo">Calcola</button>
-                <button type="reset" class="bottoneReset">Resetta</button>
-            </div>
         </section>
         
         <section class="areaRisultato">
-            <h2>Cachet lordo</h2>
-            <p class="pRisultatoLordo"></p>
+            <h2>LORDO</h2>
+            <p class="info">ⓘ Il risultato lordo è calcolato tenendo conto dell'ENPALS al 27.10%, dell'IRAP al 3.90% e della quota INAIL.</p>
+            <p class="pRisultatoLordo">0€ + IVA</p>
         </section>
         
+        <div class="boxBottoni">
+            <button type="submit" class="bottoneCalcolo">Calcola</button>
+            <button type="reset" class="bottoneReset">Resetta</button>
+        </div>
+        
     </main>
+    <footer>Creato da <a href="https://github.com/tacticalParmesan">@tacticalParmesan</a> (Edoardo Ferreri)</footer>
     <script src="fedecalc.js"></script>
 </body>
 </html>

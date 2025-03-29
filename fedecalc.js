@@ -32,7 +32,7 @@ function calcolaLordoCollettivo(compenso, componenti, residenti) {
         }
     }
 
-    return risultato
+    return risultato.toFixed(2)
 }
 
 function alClick() {
@@ -40,7 +40,7 @@ function alClick() {
         parseFloat(document.querySelector(".inputCompenso").value),
         parseFloat(document.querySelector(".inputComponenti").value),
         parseFloat(document.querySelector(".inputResidenti").value),
-    ) + " + IVA"
+    ) + "€ + IVA"
 }
 
 (function caricaEventListeners(){
