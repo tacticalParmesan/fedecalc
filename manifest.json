@@ -3,8 +3,8 @@
   "short_name": "calcCachet",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#b03052",
-  "theme_color": "#b03052",
+  "background_color": "#E45C3A",
+  "theme_color": "#E45C3A",
   "orientation": "portrait-primary",
   "icons": []
 }
