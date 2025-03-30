@@ -4,9 +4,10 @@
   font-size: 16px;
   font-family: "Roboto Condensed", monospace;
   font-weight: bold;
-  --velvet-light: #d76c82;
-  --velvet-dark: #b03052;
-  --smokedcream: #ebe8db;
+  --background: #fcebe9;
+  --primary-light: #E76F51;
+  --primary--dark: #E45C3A;
+
   --shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px,
     rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px,
     rgba(42, 51, 70, 0.04) 0px 2px 2px -1px,
@@ -18,7 +19,7 @@
 
 body {
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: var(--background);
 
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@ main {
 
 .boxTitolo {
   width: 100%;
-  background-color: var(--velvet-dark);
+  background-color: var(--primary--dark);
   margin-bottom: 0.5rem;
   box-shadow: var(--shadow)
 
@@ -73,7 +74,7 @@ main {
 
   border: none;
   border-radius: 6px;
-  background-color: var(--velvet-light);
+  background-color: var(--primary-light);
 
   box-shadow: var(--shadow)
 }
@@ -85,7 +86,7 @@ main {
 }
 
 .areaRisultato h2 {
-  color: var(--velvet-dark);
+  color: var(--primary--dark);
 }
 
 .areaRisultato .info {
@@ -97,7 +98,7 @@ main {
   border-radius: 6px;
   color: whitesmoke;
 
-  background-color: var(--velvet-light);
+  background-color: var(--primary-light);
 }
 
 .areaRisultato .pRisultatoLordo {
@@ -106,7 +107,7 @@ main {
   border-radius: 6px;
   color: whitesmoke;
 
-  background-color: var(--velvet-dark);
+  background-color: var(--primary--dark);
   box-shadow: var(--shadow)
 
 }
@@ -124,7 +125,7 @@ main {
   border-radius: 6px;
   color: whitesmoke;
 
-  background-color: var(--velvet-light);
+  background-color: var(--primary-light);
 
   box-shadow: var(--shadow)
 
