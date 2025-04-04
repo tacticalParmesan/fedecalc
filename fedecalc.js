@@ -19,7 +19,7 @@ function calcolaLordoCollettivo(compenso, componenti, residenti) {
     let risultato = 0;
 
     if (residenti > 0) {
-        for (let i = 0; i <= residenti; i++) {
+        for (let i = 0; i < residenti; i++) {
             risultato += calcolaLordoIndividuale({importoNetto: compenso, èResidente: true})
         }
     }
@@ -27,7 +27,7 @@ function calcolaLordoCollettivo(compenso, componenti, residenti) {
     const nonResidenti = componenti - residenti;
 
     if (nonResidenti > 0) {
-        for (let j = 0; j <= nonResidenti; j++) {
+        for (let j = 0; j < nonResidenti; j++) {
             risultato += calcolaLordoIndividuale({importoNetto: compenso})
         }
     }
